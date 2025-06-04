@@ -1,0 +1,24 @@
+# Python依赖项 - Omni-Temp evaluation模块
+# 基础依赖
+torch>=2.0.0
+transformers>=4.30.0
+vllm>=0.4.0
+
+# 数据处理和序列化
+numpy>=1.21.0
+pandas>=1.3.0
+json5>=0.9.0  # 为了更好的JSON支持
+
+# 文本处理和正则表达式（Python内置，但列出供参考）
+# re  # 内置模块
+# string  # 内置模块
+# collections  # 内置模块
+
+# 系统和文件操作（Python内置，但列出供参考）
+# os  # 内置模块
+# time  # 内置模块
+# argparse  # 内置模块
+
+# 可选：用于更好的性能和兼容性
+tokenizers>=0.13.0
+accelerate>=0.20.0 
