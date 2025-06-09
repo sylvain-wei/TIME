@@ -44,12 +44,22 @@ First, navigate to the working directory and download the data.
 # Install git-lfs
 pip install git-lfs
 
-# Navigate to the working directory
-chmod +x scripts/download_data.sh
+# Navigate to the working directory and download the benchmark dataset
+# 1. If you want to download and evaluate the whole TIME (WARN: maybe this dataset is too large for quick evaluation)
+chmod +x scripts/download_data_time.sh
 
 # Download the data
-./scripts/download_data.sh
+./scripts/download_data_time.sh
+
+
+# 2. **Recommended to use this download script: download the high-quality benchmark: TIME-Lite, which is the subset of TIME filtered manually.**
+chmod +x scripts/download_data_time_lite.sh
+
+# Download the data
+./scripts/download_data_time_lite.sh
 ```
+
+
 
 Second, install the dependencies.
 ```
