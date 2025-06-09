@@ -39,7 +39,7 @@ evaluation in temporal reasoning.*
 
 
 ## Get Started
-First, navigate to the working directory and download the data.
+**First, navigate to the working directory and download the data.**
 ```
 # Install git-lfs
 pip install git-lfs
@@ -47,7 +47,7 @@ pip install git-lfs
 
 There are two dataset (TIME, TIME-Lite). You should download the dataset according to your preference.
 
-Situation 1. If you want to download and evaluate the whole TIME (WARN: maybe this dataset is too large for quick evaluation)
+_Situation 1. If you want to download and evaluate the whole TIME (WARN: maybe this dataset is too large for quick evaluation)_
 ```
 # Navigate to the working directory and download the benchmark dataset TIME
 chmod +x scripts/download_data_time.sh
@@ -56,7 +56,7 @@ chmod +x scripts/download_data_time.sh
 ./scripts/download_data_time.sh
 ```
 
-Situation 2. **Recommended** download the high-quality benchmark: TIME-Lite, which is the subset of TIME filtered manually.
+_Situation 2. **Recommended!** Download the high-quality benchmark: TIME-Lite, which is the subset of TIME filtered manually._
 ```
 # Navigate to the working directory and download the benchmark dataset TIME-Lite
 chmod +x scripts/download_data_time_lite.sh
@@ -67,19 +67,19 @@ chmod +x scripts/download_data_time_lite.sh
 
 
 
-Second, install the dependencies.
+**Second, install the dependencies.**
 ```
 pip install -r evaluation/requirements.txt
 ```
 
-Third, run the evaluation script.
+**Third, run the evaluation script.**
 
-If you want to evaluate the TIME dataset
+_1. If you want to evaluate the TIME dataset_
 ```
 ./scripts/eval_time.sh
 ```
 
-If you want to evaluate the TIME-Lite dataset
+_2. **Recommended!** If you want to evaluate the TIME-Lite dataset_
 ```
 ./scripts/eval_timelite.sh
 ```
