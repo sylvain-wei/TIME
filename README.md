@@ -16,7 +16,10 @@
 
 **Paper**: [https://arxiv.org/abs/2505.12891](https://arxiv.org/abs/2505.12891)
 
-**Dataset**: [https://huggingface.co/datasets/SylvainWei/TIME](https://huggingface.co/datasets/SylvainWei/TIME)
+**Dataset(Complete Dataset:TIME)**: [https://huggingface.co/datasets/SylvainWei/TIME](https://huggingface.co/datasets/SylvainWei/TIME)
+
+**Dataset(Small Dataset:TIME-Lite)**: [https://huggingface.co/datasets/SylvainWei/TIME-Lite](https://huggingface.co/datasets/SylvainWei/TIME-Lite)
+
 
 *Temporal reasoning is pivotal for Large Language Models (LLMs) to comprehend
 the real world. However, existing works neglect the real-world challenges for
