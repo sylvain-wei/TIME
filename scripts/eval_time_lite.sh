@@ -1,4 +1,4 @@
-dataset_path="./TIME/TIME_Newest.json"
+dataset_path="./TIME-Lite/TIME_Lite.json"
 model="model_path/Llama-3.1-8B-Instruct"
 
 for dataset_name in "TIME-Lite-Wiki" "TIME-Lite-Dial"
