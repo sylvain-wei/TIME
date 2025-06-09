@@ -18,7 +18,7 @@
 
 **Dataset(Complete Dataset:TIME)**: [https://huggingface.co/datasets/SylvainWei/TIME](https://huggingface.co/datasets/SylvainWei/TIME)
 
-**Dataset(Small Dataset:TIME-Lite)**: [https://huggingface.co/datasets/SylvainWei/TIME-Lite](https://huggingface.co/datasets/SylvainWei/TIME-Lite)
+**Dataset(Small and High-quality Dataset:TIME-Lite)**: [https://huggingface.co/datasets/SylvainWei/TIME-Lite](https://huggingface.co/datasets/SylvainWei/TIME-Lite)
 
 
 *Temporal reasoning is pivotal for Large Language Models (LLMs) to comprehend
