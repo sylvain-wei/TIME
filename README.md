@@ -2,7 +2,6 @@
 
 # ⏳ TIME
 
----
 
 <div align="center" style="margin: 20px 0;">
 
@@ -12,7 +11,6 @@
 [![TIME Dataset](https://img.shields.io/badge/🤗-TIME%20Dataset-yellow?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME)
 [![TIME-Lite](https://img.shields.io/badge/⚡-TIME--Lite-blue?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME-Lite)
 
----
 
 </div>
 
@@ -34,7 +32,7 @@
 
 ## 📋 Project Information
 
-<img src="assets/logo.png" alt="TIME Logo" width="200"/>
+<!-- <img src="assets/logo.png" alt="TIME Logo" width="200"/> -->
 
 > **Authors**: Shaohang Wei, Wei Li, Feifan Song, Wen Luo, Tianyi Zhuang, Haochen Tan, Zhijiang Guo, Houfeng Wang  
 **Affiliation**: Peking University, Huawei Noah's Ark Lab  
