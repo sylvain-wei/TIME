@@ -21,6 +21,7 @@
 
 <div align="center" style="margin: 20px 0;">
   <img src="assets/Peking_University_logo.svg" alt="Peking University" height="60" style="margin: 0 40px;"/>
+  <span style="display: inline-block; width: 50px;"></span> <!-- 空白间距 -->
   <img src="assets/Noah_s_ark_lab_logo.png" alt="Huawei Noah's Ark Lab" height="45" style="margin: 0 40px;"/>
 </div>
 
