@@ -17,7 +17,7 @@
 
 
 
-<h2>TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenarios</h2>
+<h2>[NeurIPS'25 Spotlight] TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenarios</h2>
 
 <div align="center" style="margin: 20px 0;">
   <img src="assets/Peking_University_logo.svg" alt="Peking University" height="60" style="margin: 0 40px;"/>
@@ -27,7 +27,13 @@
 </div>
 
 > 🎉🎉 **Congratulations!** This paper has been accepted as **<span style="color: #dc3545; font-weight: bold;">NeurIPS 2025 Spotlight 🌟🔥</span>** at D&B track.
+> 
+**🌟 If you found this work helpful, please consider giving us a ⭐ on GitHub!**
 
+[![GitHub stars](https://img.shields.io/github/stars/sylvain-wei/TIME?style=social&label=Star)](https://github.com/sylvain-wei/TIME)
+[![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/datasets/SylvainWei/TIME)
+
+</div>
 
 
 ## 📋 Project Information
@@ -215,10 +221,5 @@ If you find our work interesting and meaningful, welcome to star this repo, give
 
 <div align="center" style="margin: 30px 0; padding: 20px; background-color: #f8f9fa; border-radius: 10px;">
 
-**🌟 If you found this work helpful, please consider giving us a ⭐ on GitHub!**
 
-[![GitHub stars](https://img.shields.io/github/stars/sylvain-wei/TIME?style=social&label=Star)](https://github.com/sylvain-wei/TIME)
-[![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/datasets/SylvainWei/TIME)
-
-</div>
 
