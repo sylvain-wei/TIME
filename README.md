@@ -1,54 +1,81 @@
-<h1 align="center">
-⏳TIME
-</h1>
+<div align="center">
 
-<p align="center">
-  <img src="assets/dataset_overview.png" alt="Dataset Overview" width="800"/>
-</p>
+# ⏳ TIME
 
+<img src="assets/logo.png" alt="TIME Logo" width="200"/>
 
-**TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenario**
+<h2>TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenarios</h2>
 
+<div align="center" style="margin: 20px 0;">
+  <img src="assets/Peking_University_logo.svg" alt="Peking University" height="60" style="margin: 0 40px;"/>
+  <img src="assets/Noah_s_ark_lab_logo.png" alt="Huawei Noah's Ark Lab" height="45" style="margin: 0 40px;"/>
+</div>
 
-**Authors**: Shaohang Wei, Wei Li, Feifan Song, Wen Luo, Tianyi Zhuang, Haochen Tan, Zhijiang Guo, Houfeng Wang
+</div>
 
-**Affiliation**: Peking University, Huawei Noah's Ark Lab
+> 🎉🎉 **Congratulations!** This paper has been accepted as **<span style="color: #dc3545; font-weight: bold;">NeurIPS 2025 Spotlight 🌟🔥</span>** at D&B track.
 
-**Paper**: [https://arxiv.org/abs/2505.12891](https://arxiv.org/abs/2505.12891)
+## 📋 Project Information
 
-**Dataset(Complete Dataset:TIME)**: [https://huggingface.co/datasets/SylvainWei/TIME](https://huggingface.co/datasets/SylvainWei/TIME)
+**Authors**: Shaohang Wei, Wei Li, Feifan Song, Wen Luo, Tianyi Zhuang, Haochen Tan, Zhijiang Guo, Houfeng Wang  
+**Affiliation**: Peking University, Huawei Noah's Ark Lab  
+**Contact**: [shaohang@stu.pku.edu.cn](mailto:shaohang@stu.pku.edu.cn)
 
-**Dataset(Small and High-quality Dataset:TIME-Lite)**: [https://huggingface.co/datasets/SylvainWei/TIME-Lite](https://huggingface.co/datasets/SylvainWei/TIME-Lite)
+## 🔗 Quick Links
 
+<div align="center" style="margin: 20px 0;">
 
-*Temporal reasoning is pivotal for Large Language Models (LLMs) to comprehend
-the real world. However, existing works neglect the real-world challenges for
-temporal reasoning: (1) intensive temporal information, (2) fast-changing event
-dynamics, and (3) complex temporal dependencies in social interactions. To
-bridge this gap, we propose a multi-level benchmark TIME, designed for temporal
-reasoning in real-world scenarios. **TIME** consists of `38,522` QA pairs, covering 3
-levels with 11 fine-grained sub-tasks. This benchmark encompasses 3 sub-datasets
-reflecting different real-world challenges: **TIME-Wiki**, **TIME-News**, and **TIME-Dial**. We conduct extensive experiments on reasoning models and non-reasoning
-models. And we conducted an in-depth analysis of temporal reasoning performance
-across diverse real-world scenarios and tasks, and summarized the impact of
-test-time scaling on temporal reasoning capabilities. Additionally, we release
-**TIME-Lite**, a human-annotated subset to foster future research and standardized
-evaluation in temporal reasoning.*
+[![Paper](https://img.shields.io/badge/📄-Paper-red?style=for-the-badge)](https://arxiv.org/abs/2505.12891)
+[![Code](https://img.shields.io/badge/💻-Code-black?style=for-the-badge&logo=github)](https://github.com/sylvain-wei/TIME)
+[![TIME Dataset](https://img.shields.io/badge/🤗-TIME%20Dataset-yellow?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME)
+[![TIME-Lite](https://img.shields.io/badge/⚡-TIME--Lite-blue?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME-Lite)
+
+</div>
 
 
+## 📖 Abstract
+
+<div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #953b3f; margin: 20px 0;">
+
+Temporal reasoning is pivotal for Large Language Models (LLMs) to comprehend the real world. However, existing works neglect the real-world challenges for temporal reasoning: 
+
+- **Intensive temporal information**
+- **Fast-changing event dynamics** 
+- **Complex temporal dependencies in social interactions**
+
+To bridge this gap, we propose a multi-level benchmark **TIME**, designed for temporal reasoning in real-world scenarios. 
+
+**TIME** consists of `38,522` QA pairs, covering 3 levels with 11 fine-grained sub-tasks. This benchmark encompasses 3 sub-datasets reflecting different real-world challenges: **TIME-Wiki**, **TIME-News**, and **TIME-Dial**. 
+
+We conduct extensive experiments on reasoning models and non-reasoning models, and conducted an in-depth analysis of temporal reasoning performance across diverse real-world scenarios and tasks, and summarized the impact of test-time scaling on temporal reasoning capabilities. Additionally, we release **TIME-Lite**, a human-annotated subset to foster future research and standardized evaluation in temporal reasoning.
+
+</div>
+
+<div align="center" style="margin: 30px 0;">
+  <img src="assets/dataset_overview.png" alt="TIME Dataset Overview" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+</div>
 
 
-## Get Started
-**First, navigate to the working directory and download the data.**
-```
+
+
+## 🚀 Get Started
+
+### 📥 Step 1: Install Dependencies
+
+```bash
 # Install git-lfs
 pip install git-lfs
 ```
 
-There are two dataset (TIME, TIME-Lite). You should download the dataset according to your preference.
+### 📊 Step 2: Download Dataset
 
-_Situation 1. If you want to download and evaluate the whole TIME (WARN: maybe this dataset is too large for quick evaluation)_
-```
+We provide two datasets. Choose according to your needs:
+
+<div style="background-color: #fff3cd; padding: 15px; border-radius: 8px; border-left: 4px solid #ffc107; margin: 15px 0;">
+
+**⚠️ Option 1: Complete TIME Dataset** *(Large dataset - may be too large for quick evaluation)*
+
+```bash
 # Navigate to the working directory and download the benchmark dataset TIME
 chmod +x scripts/download_data_time.sh
 
@@ -56,8 +83,13 @@ chmod +x scripts/download_data_time.sh
 ./scripts/download_data_time.sh
 ```
 
-_Situation 2. **Recommended!** Download the high-quality benchmark: TIME-Lite, which is the subset of TIME filtered manually._
-```
+</div>
+
+<div style="background-color: #d1ecf1; padding: 15px; border-radius: 8px; border-left: 4px solid #17a2b8; margin: 15px 0;">
+
+**✅ Option 2: TIME-Lite Dataset** *(Recommended - High-quality subset)*
+
+```bash
 # Navigate to the working directory and download the benchmark dataset TIME-Lite
 chmod +x scripts/download_data_time_lite.sh
 
@@ -65,32 +97,45 @@ chmod +x scripts/download_data_time_lite.sh
 ./scripts/download_data_time_lite.sh
 ```
 
+</div>
 
 
-**Second, install the dependencies.**
-```
+
+### 🔧 Step 3: Install Evaluation Dependencies
+
+```bash
 pip install -r evaluation/requirements.txt
 ```
 
-**Third, run the evaluation script.**
+### ▶️ Step 4: Run Evaluation
 
-_1. If you want to evaluate the TIME dataset_
+**Option A: Evaluate TIME dataset**
 ```
 ./scripts/eval_time.sh
 ```
 
-_2. **Recommended!** If you want to evaluate the TIME-Lite dataset_
+**Option B: Evaluate TIME-Lite dataset** *(Recommended)*
 ```
 ./scripts/eval_timelite.sh
 ```
 
 ## 🧠 Construction Pipeline
-![Construction Pipeline](assets/dataset_pipeline.png)
+
+<div align="center" style="margin: 30px 0;">
+  <img src="assets/dataset_pipeline.png" alt="TIME Construction Pipeline" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+</div>
 
 
 ## 📊 Data Quantity
 
-The TIME benchmark consists of `38,522` QA pairs, and the TIME-LITE subset contains `943` QA pairs.
+<div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #953b3f; margin: 20px 0;">
+
+**📈 Dataset Statistics:**
+
+- **TIME**: `38,522` QA pairs (Complete benchmark)
+- **TIME-Lite**: `943` QA pairs (High-quality subset)
+
+</div>
 
 Here is a detailed breakdown of the dataset statistics:
 
@@ -109,24 +154,46 @@ Here is a detailed breakdown of the dataset statistics:
 
 ## 💪🏻 Evaluation Results
 
-### TIME-Lite Results Radar Chart
+### 📊 TIME-Lite Results Radar Charts
 
 Here are the detailed evaluation results for the TIME-Lite dataset on different sub-datasets:
 
-#### TIME-Lite-Wiki
-![TIME-Lite-Wiki Results](assets/radar_time_lite_wiki.png)
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 30px 0; gap: 20px;">
 
-#### TIME-Lite-News
-![TIME-Lite-News Results](assets/radar_time_lite_news.png)
+<div style="flex: 1; min-width: 300px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 
-#### TIME-Lite-Dial
-![TIME-Lite-Dial Results](assets/radar_time_lite_dial.png)
+#### 🗄️ TIME-Lite-Wiki
+<img src="assets/radar_time_lite_wiki.png" alt="TIME-Lite-Wiki Results" style="max-width: 100%; height: auto; border-radius: 10px;"/>
+
+</div>
+
+<div style="flex: 1; min-width: 300px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+#### 📰 TIME-Lite-News
+<img src="assets/radar_time_lite_news.png" alt="TIME-Lite-News Results" style="max-width: 100%; height: auto; border-radius: 10px;"/>
+
+</div>
+
+<div style="flex: 1; min-width: 300px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+#### 💬 TIME-Lite-Dial
+<img src="assets/radar_time_lite_dial.png" alt="TIME-Lite-Dial Results" style="max-width: 100%; height: auto; border-radius: 10px;"/>
+
+</div>
+
+</div>
 
 
 
 ## 💬 Citation
 
-If you find our work interesting and meaningful, welcome to star this repo, give a upvote to our HF repo [TIME](https://huggingface.co/datasets/SylvainWei/TIME) and cite our paper as follows.
+<div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #953b3f; margin: 20px 0;">
+
+If you find our work interesting and meaningful, welcome to star this repo, give an upvote to our HF repo [TIME](https://huggingface.co/datasets/SylvainWei/TIME) and cite our paper as follows.
+
+</div>
+
+<div style="background-color: #2d3748; color: #e2e8f0; padding: 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.6; margin: 20px 0;">
 
 ```bibtex
 @article{wei2025time,
@@ -136,4 +203,17 @@ If you find our work interesting and meaningful, welcome to star this repo, give
   year={2025}
 }
 ```
+
+</div>
+
+---
+
+<div align="center" style="margin: 30px 0; padding: 20px; background-color: #f8f9fa; border-radius: 10px;">
+
+**🌟 If you found this work helpful, please consider giving us a ⭐ on GitHub!**
+
+[![GitHub stars](https://img.shields.io/github/stars/sylvain-wei/TIME?style=social&label=Star)](https://github.com/sylvain-wei/TIME)
+[![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/datasets/SylvainWei/TIME)
+
+</div>
 
