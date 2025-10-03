@@ -2,7 +2,22 @@
 
 # ⏳ TIME
 
-<img src="assets/logo.png" alt="TIME Logo" width="200"/>
+---
+
+<div align="center" style="margin: 20px 0;">
+
+
+[![Paper](https://img.shields.io/badge/📄-Paper-red?style=for-the-badge)](https://arxiv.org/abs/2505.12891)
+[![Code](https://img.shields.io/badge/💻-Code-black?style=for-the-badge&logo=github)](https://github.com/sylvain-wei/TIME)
+[![TIME Dataset](https://img.shields.io/badge/🤗-TIME%20Dataset-yellow?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME)
+[![TIME-Lite](https://img.shields.io/badge/⚡-TIME--Lite-blue?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME-Lite)
+
+---
+
+</div>
+
+
+
 
 <h2>TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenarios</h2>
 
@@ -15,23 +30,15 @@
 
 > 🎉🎉 **Congratulations!** This paper has been accepted as **<span style="color: #dc3545; font-weight: bold;">NeurIPS 2025 Spotlight 🌟🔥</span>** at D&B track.
 
+
+
 ## 📋 Project Information
 
-**Authors**: Shaohang Wei, Wei Li, Feifan Song, Wen Luo, Tianyi Zhuang, Haochen Tan, Zhijiang Guo, Houfeng Wang  
+<img src="assets/logo.png" alt="TIME Logo" width="200"/>
+
+> **Authors**: Shaohang Wei, Wei Li, Feifan Song, Wen Luo, Tianyi Zhuang, Haochen Tan, Zhijiang Guo, Houfeng Wang  
 **Affiliation**: Peking University, Huawei Noah's Ark Lab  
 **Contact**: [shaohang@stu.pku.edu.cn](mailto:shaohang@stu.pku.edu.cn)
-
-## 🔗 Quick Links
-
-<div align="center" style="margin: 20px 0;">
-
-[![Paper](https://img.shields.io/badge/📄-Paper-red?style=for-the-badge)](https://arxiv.org/abs/2505.12891)
-[![Code](https://img.shields.io/badge/💻-Code-black?style=for-the-badge&logo=github)](https://github.com/sylvain-wei/TIME)
-[![TIME Dataset](https://img.shields.io/badge/🤗-TIME%20Dataset-yellow?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME)
-[![TIME-Lite](https://img.shields.io/badge/⚡-TIME--Lite-blue?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME-Lite)
-
-</div>
-
 
 ## 📖 Abstract
 
