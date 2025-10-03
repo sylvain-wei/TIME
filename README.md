@@ -10,6 +10,8 @@
 [![Code](https://img.shields.io/badge/💻-Code-black?style=for-the-badge&logo=github)](https://github.com/sylvain-wei/TIME)
 [![TIME Dataset](https://img.shields.io/badge/🤗-TIME%20Dataset-yellow?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME)
 [![TIME-Lite](https://img.shields.io/badge/⚡-TIME--Lite-blue?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME-Lite)
+[![TIME-Lite](https://img.shields.io/badge/🌐-ProjectPage-green?style=for-the-badge)](https://sylvain-wei.github.io/TIME/)
+[![TIME-Lite](https://img.shields.io/badge/📣-NeurIPS25-purple?style=for-the-badge)](https://neurips.cc/virtual/2025/poster/121417)
 
 
 </div>
