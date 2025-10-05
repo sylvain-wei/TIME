@@ -44,7 +44,7 @@
 <!-- <img src="assets/logo.png" alt="TIME Logo" width="200"/> -->
 
 > **Authors**: Shaohang Wei, Wei Li, Feifan Song, Wen Luo, Tianyi Zhuang, Haochen Tan, Zhijiang Guo, Houfeng Wang  
-**Affiliation**: Peking University, Huawei Noah's Ark Lab  
+**Affiliation**: Peking University, Noah's Ark Lab
 **Contact**: [shaohang@stu.pku.edu.cn](mailto:shaohang@stu.pku.edu.cn)
 
 ## 📖 Abstract
