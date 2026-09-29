@@ -1,213 +1,185 @@
-<div align="center">
+<p align="center">
+  <img src="assets/hero.png" alt="TIME — temporal reasoning in real-world scenarios" width="100%">
+</p>
 
-# ⏳ TIME
+<h1 align="center">TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenarios</h1>
 
+<p align="center">
+  Shaohang Wei, Wei Li, Feifan Song, Wen Luo,<br>
+  Tianyi Zhuang, Haochen Tan, Zhijiang Guo, Houfeng Wang
+</p>
 
-<div align="center" style="margin: 20px 0;">
+<p align="center">
+  Peking University &nbsp;·&nbsp; Noah's Ark Lab<br>
+  <sub>Contact: <a href="mailto:shaohang@stu.pku.edu.cn">shaohang@stu.pku.edu.cn</a></sub>
+</p>
 
+<p align="center">
+  <img src="assets/Peking_University_logo.svg" alt="Peking University" height="56">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/Noah_s_ark_lab_logo.png" alt="Huawei Noah's Ark Lab" height="56">
+</p>
 
-[![Paper](https://img.shields.io/badge/📄-Paper-red?style=for-the-badge)](https://arxiv.org/abs/2505.12891)
-[![Code](https://img.shields.io/badge/💻-Code-black?style=for-the-badge&logo=github)](https://github.com/sylvain-wei/TIME)
-[![TIME Dataset](https://img.shields.io/badge/🤗-TIME%20Dataset-yellow?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME)
-[![TIME-Lite](https://img.shields.io/badge/⚡-TIME--Lite-blue?style=for-the-badge)](https://huggingface.co/datasets/SylvainWei/TIME-Lite)
-[![TIME-Lite](https://img.shields.io/badge/🌐-ProjectPage-green?style=for-the-badge)](https://sylvain-wei.github.io/TIME/)
-[![TIME-Lite](https://img.shields.io/badge/📣-NeurIPS25-purple?style=for-the-badge)](https://neurips.cc/virtual/2025/poster/121417)
+<p align="center">
+  <b>🌟 NeurIPS 2025 Spotlight</b><br>
+  <sub>Accepted to the Datasets &amp; Benchmarks track.</sub>
+</p>
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2505.12891"><img src="https://img.shields.io/badge/Paper-arXiv-40464D?style=flat-square" alt="Paper: arXiv"></a>
+  <a href="https://sylvain-wei.github.io/TIME/"><img src="https://img.shields.io/badge/Website-Project_Page-66717E?style=flat-square" alt="Project website"></a>
+  <a href="https://github.com/sylvain-wei/TIME"><img src="https://img.shields.io/badge/Code-GitHub-24292F?style=flat-square&logo=github&logoColor=white" alt="Code: GitHub"></a>
+  <a href="https://huggingface.co/datasets/SylvainWei/TIME"><img src="https://img.shields.io/badge/Dataset-TIME-87919A?style=flat-square" alt="TIME dataset on Hugging Face"></a>
+  <a href="https://huggingface.co/datasets/SylvainWei/TIME-Lite"><img src="https://img.shields.io/badge/Dataset-TIME--Lite-59636E?style=flat-square" alt="TIME-Lite dataset on Hugging Face"></a>
+  <a href="https://neurips.cc/virtual/2025/poster/121417"><img src="https://img.shields.io/badge/NeurIPS_2025-Spotlight-30343B?style=flat-square" alt="NeurIPS 2025 Spotlight"></a>
+</p>
 
-</div>
+<p align="center">
+  <a href="https://sylvain-wei.github.io/TIME/"><b>Project Website ↗</b></a> &nbsp;·&nbsp;
+  <a href="#overview">Overview</a> &nbsp;·&nbsp;
+  <a href="#dataset">Dataset</a> &nbsp;·&nbsp;
+  <a href="#evaluation-results">Results</a> &nbsp;·&nbsp;
+  <a href="#getting-started">Getting started</a> &nbsp;·&nbsp;
+  <a href="#citation">Citation</a>
+</p>
 
+## Overview
 
+**TIME** is a benchmark for temporal reasoning in real-world scenarios. It contains **38,522 QA pairs** across **3 levels and 11 fine-grained tasks**, organized into **TIME-Wiki**, **TIME-News**, and **TIME-Dial**. These settings capture three challenges: intensive temporal information, fast-changing event dynamics, and complex temporal dependencies in social interactions.
 
+We evaluate reasoning and non-reasoning models across these scenarios and tasks, and study how test-time scaling affects temporal reasoning. **TIME-Lite** provides a human-annotated subset of **943 QA pairs** for standardized evaluation.
 
-<h2>[NeurIPS'25 Spotlight] TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenarios</h2>
+<p align="center">
+  <a href="assets/dataset_overview.png"><img src="assets/dataset_overview.png" alt="TIME overview: three levels of temporal reasoning across Wiki, News, and Dial" width="95%"></a>
+</p>
 
-<div align="center" style="margin: 20px 0;">
-  <img src="assets/Peking_University_logo.svg" alt="Peking University" height="60" style="margin: 0 40px;"/>
-  <span style="display: inline-block; width: 50px;"></span> <!-- 空白间距 -->
-  <img src="assets/Noah_s_ark_lab_logo.png" alt="Huawei Noah's Ark Lab" height="45" style="margin: 0 40px;"/>
-</div>
+## Dataset
 
-</div>
+The complete benchmark and its human-annotated subset share the same three scenario groups. For a compact evaluation, start with **TIME-Lite**.
 
-> 🎉🎉 **Congratulations!** This paper has been accepted as **<span style="color: #dc3545; font-weight: bold;">NeurIPS 2025 Spotlight 🌟🔥</span>** at D&B track.
-> 
-**🌟 If you found this work helpful, please consider giving us a ⭐ on GitHub!**
+<table align="center">
+  <thead>
+    <tr><th><sub>Scenario</sub></th><th><sub>TIME</sub></th><th><sub>TIME-Lite</sub></th></tr>
+  </thead>
+  <tbody>
+    <tr><td><sub>Wiki</sub></td><td align="right"><sub>13,848</sub></td><td align="right"><sub>322</sub></td></tr>
+    <tr><td><sub>News</sub></td><td align="right"><sub>19,958</sub></td><td align="right"><sub>299</sub></td></tr>
+    <tr><td><sub>Dial</sub></td><td align="right"><sub>4,716</sub></td><td align="right"><sub>322</sub></td></tr>
+    <tr><td><sub><b>All scenarios</b></sub></td><td align="right"><sub><b>38,522</b></sub></td><td align="right"><sub><b>943</b></sub></td></tr>
+  </tbody>
+</table>
 
-[![GitHub stars](https://img.shields.io/github/stars/sylvain-wei/TIME?style=social&label=Star)](https://github.com/sylvain-wei/TIME)
-[![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/datasets/SylvainWei/TIME)
+<p align="center"><sub>Number of QA pairs. TIME is the complete benchmark; TIME-Lite is the high-quality, human-annotated subset.</sub></p>
 
-</div>
+<details>
+<summary><b>Detailed statistics by task and scenario</b></summary>
 
+<table>
+  <thead>
+    <tr><th rowspan="2"><sub>Task</sub></th><th colspan="4"><sub>TIME</sub></th><th colspan="4"><sub>TIME-Lite</sub></th></tr>
+    <tr><th><sub>Wiki</sub></th><th><sub>News</sub></th><th><sub>Dial</sub></th><th><sub>Total</sub></th><th><sub>Wiki</sub></th><th><sub>News</sub></th><th><sub>Dial</sub></th><th><sub>Total</sub></th></tr>
+  </thead>
+  <tbody>
+    <tr><td><sub>All tasks</sub></td><td align="right"><sub>13848</sub></td><td align="right"><sub>19958</sub></td><td align="right"><sub>4716</sub></td><td align="right"><sub><b>38522</b></sub></td><td align="right"><sub>322</sub></td><td align="right"><sub>299</sub></td><td align="right"><sub>322</sub></td><td align="right"><sub><b>943</b></sub></td></tr>
+    <tr><td><sub>Ext.</sub></td><td align="right"><sub>1261</sub></td><td align="right"><sub>0</sub></td><td align="right"><sub>219</sub></td><td align="right"><sub>1480</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>0</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>60</sub></td></tr>
+    <tr><td><sub>Loc.</sub></td><td align="right"><sub>1299</sub></td><td align="right"><sub>1800</sub></td><td align="right"><sub>447</sub></td><td align="right"><sub>3546</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>90</sub></td></tr>
+    <tr><td><sub>Comp.</sub></td><td align="right"><sub>1126</sub></td><td align="right"><sub>1800</sub></td><td align="right"><sub>450</sub></td><td align="right"><sub>3376</sub></td><td align="right"><sub>24</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>24</sub></td><td align="right"><sub>78</sub></td></tr>
+    <tr><td><sub>D.C.</sub></td><td align="right"><sub>1151</sub></td><td align="right"><sub>1800</sub></td><td align="right"><sub>450</sub></td><td align="right"><sub>3401</sub></td><td align="right"><sub>28</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>28</sub></td><td align="right"><sub>86</sub></td></tr>
+    <tr><td><sub>O.C.</sub></td><td align="right"><sub>1299</sub></td><td align="right"><sub>1800</sub></td><td align="right"><sub>450</sub></td><td align="right"><sub>3549</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>90</sub></td></tr>
+    <tr><td><sub>E.R.</sub></td><td align="right"><sub>1287</sub></td><td align="right"><sub>1800</sub></td><td align="right"><sub>450</sub></td><td align="right"><sub>3537</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>90</sub></td></tr>
+    <tr><td><sub>O.R.</sub></td><td align="right"><sub>1288</sub></td><td align="right"><sub>1800</sub></td><td align="right"><sub>450</sub></td><td align="right"><sub>3538</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>90</sub></td></tr>
+    <tr><td><sub>R.R.</sub></td><td align="right"><sub>1287</sub></td><td align="right"><sub>1800</sub></td><td align="right"><sub>450</sub></td><td align="right"><sub>3537</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>90</sub></td></tr>
+    <tr><td><sub>C.T.</sub></td><td align="right"><sub>1263</sub></td><td align="right"><sub>1800</sub></td><td align="right"><sub>450</sub></td><td align="right"><sub>3513</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>90</sub></td></tr>
+    <tr><td><sub>T.L.</sub></td><td align="right"><sub>1300</sub></td><td align="right"><sub>3758</sub></td><td align="right"><sub>450</sub></td><td align="right"><sub>5508</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>29</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>89</sub></td></tr>
+    <tr><td><sub>C.F.</sub></td><td align="right"><sub>1287</sub></td><td align="right"><sub>1800</sub></td><td align="right"><sub>450</sub></td><td align="right"><sub>3537</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>30</sub></td><td align="right"><sub>90</sub></td></tr>
+  </tbody>
+</table>
 
-## 📋 Project Information
+<p><sub>Task abbreviations: Ext. (Extract), Loc. (Localization), Comp. (Computation), D.C. (Duration Compare), O.C. (Order Compare); E.R. (Explicit Reasoning), O.R. (Order Reasoning), R.R. (Relative Reasoning); C.T. (Co-temporality), T.L. (Timeline), C.F. (Counterfactual).</sub></p>
 
-<!-- <img src="assets/logo.png" alt="TIME Logo" width="200"/> -->
+</details>
 
-> **Authors**: Shaohang Wei, Wei Li, Feifan Song, Wen Luo, Tianyi Zhuang, Haochen Tan, Zhijiang Guo, Houfeng Wang  
-**Affiliation**: Peking University, Noah's Ark Lab    
-**Contact**: [shaohang@stu.pku.edu.cn](mailto:shaohang@stu.pku.edu.cn)
+## Construction pipeline
 
-## 📖 Abstract
+<p align="center">
+  <a href="assets/dataset_pipeline.png"><img src="assets/dataset_pipeline.png" alt="TIME dataset construction pipeline" width="88%"></a>
+</p>
 
-<div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #953b3f; margin: 20px 0;">
+## Evaluation results
 
-Temporal reasoning is pivotal for Large Language Models (LLMs) to comprehend the real world. However, existing works neglect the real-world challenges for temporal reasoning: 
+The following radar charts compare model performance on the three **TIME-Lite** sub-datasets.
 
-- **Intensive temporal information**
-- **Fast-changing event dynamics** 
-- **Complex temporal dependencies in social interactions**
+<table>
+  <thead>
+    <tr>
+      <th width="33%"><sub>TIME-Lite-Wiki</sub></th>
+      <th width="33%"><sub>TIME-Lite-News</sub></th>
+      <th width="33%"><sub>TIME-Lite-Dial</sub></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><a href="assets/radar_time_lite_wiki.png"><img src="assets/radar_time_lite_wiki.png" alt="TIME-Lite-Wiki results" width="100%"></a></td>
+      <td align="center"><a href="assets/radar_time_lite_news.png"><img src="assets/radar_time_lite_news.png" alt="TIME-Lite-News results" width="100%"></a></td>
+      <td align="center"><a href="assets/radar_time_lite_dial.png"><img src="assets/radar_time_lite_dial.png" alt="TIME-Lite-Dial results" width="100%"></a></td>
+    </tr>
+  </tbody>
+</table>
 
-To bridge this gap, we propose a multi-level benchmark **TIME**, designed for temporal reasoning in real-world scenarios. 
+<p align="center"><sub>Click any chart to view its full-resolution labels and legend.</sub></p>
 
-**TIME** consists of `38,522` QA pairs, covering 3 levels with 11 fine-grained sub-tasks. This benchmark encompasses 3 sub-datasets reflecting different real-world challenges: **TIME-Wiki**, **TIME-News**, and **TIME-Dial**. 
+## Getting started
 
-We conduct extensive experiments on reasoning models and non-reasoning models, and conducted an in-depth analysis of temporal reasoning performance across diverse real-world scenarios and tasks, and summarized the impact of test-time scaling on temporal reasoning capabilities. Additionally, we release **TIME-Lite**, a human-annotated subset to foster future research and standardized evaluation in temporal reasoning.
+### 1. Set up the repository
 
-</div>
-
-<div align="center" style="margin: 30px 0;">
-  <img src="assets/dataset_overview.png" alt="TIME Dataset Overview" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
-</div>
-
-
-
-
-## 🚀 Get Started
-
-### 📥 Step 1: Install Dependencies
+Install [Git LFS](https://git-lfs.com/) and clone this repository:
 
 ```bash
-# Install git-lfs
-pip install git-lfs
-```
-
-### 📊 Step 2: Download Dataset
-
-We provide two datasets. Choose according to your needs:
-
-<div style="background-color: #fff3cd; padding: 15px; border-radius: 8px; border-left: 4px solid #ffc107; margin: 15px 0;">
-
-**⚠️ Option 1: Complete TIME Dataset** *(Large dataset - may be too large for quick evaluation)*
-
-```bash
-# Navigate to the working directory and download the benchmark dataset TIME
-chmod +x scripts/download_data_time.sh
-
-# Download the data
-./scripts/download_data_time.sh
-```
-
-</div>
-
-<div style="background-color: #d1ecf1; padding: 15px; border-radius: 8px; border-left: 4px solid #17a2b8; margin: 15px 0;">
-
-**✅ Option 2: TIME-Lite Dataset** *(Recommended - High-quality subset)*
-
-```bash
-# Navigate to the working directory and download the benchmark dataset TIME-Lite
-chmod +x scripts/download_data_time_lite.sh
-
-# Download the data
-./scripts/download_data_time_lite.sh
-```
-
-</div>
-
-
-
-### 🔧 Step 3: Install Evaluation Dependencies
-
-```bash
+git lfs install
+git clone https://github.com/sylvain-wei/TIME.git
+cd TIME
 pip install -r evaluation/requirements.txt
 ```
 
-### ▶️ Step 4: Run Evaluation
+### 2. Download a dataset
 
-**Option A: Evaluate TIME dataset**
-```
-./scripts/eval_time.sh
-```
+**TIME-Lite — recommended for a compact evaluation:**
 
-**Option B: Evaluate TIME-Lite dataset** *(Recommended)*
-```
-./scripts/eval_timelite.sh
+```bash
+bash scripts/download_data_time_lite.sh
 ```
 
-## 🧠 Construction Pipeline
+**TIME — complete benchmark:**
 
-<div align="center" style="margin: 30px 0;">
-  <img src="assets/dataset_pipeline.png" alt="TIME Construction Pipeline" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
-</div>
+```bash
+bash scripts/download_data_time.sh
+```
 
+<sub>The datasets are also available directly on Hugging Face: [TIME](https://huggingface.co/datasets/SylvainWei/TIME) · [TIME-Lite](https://huggingface.co/datasets/SylvainWei/TIME-Lite).</sub>
 
-## 📊 Data Quantity
+### 3. Configure and run evaluation
 
-<div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #953b3f; margin: 20px 0;">
+Set `model` and `dataset_path` in the corresponding evaluation script for your local setup.
 
-**📈 Dataset Statistics:**
+<sub>The provided scripts need local adaptation: check the download archive locations and evaluation arguments. The prompt templates referenced by `evaluation/eval.py` are not included in this repository.</sub>
 
-- **TIME**: `38,522` QA pairs (Complete benchmark)
-- **TIME-Lite**: `943` QA pairs (High-quality subset)
+**TIME-Lite:**
 
-</div>
+```bash
+bash scripts/eval_time_lite.sh
+```
 
-Here is a detailed breakdown of the dataset statistics:
+**TIME:**
 
-| Dataset          | All Tasks | Ext. | Loc. | Comp. | D.C. | O.C. | E.R. | O.R. | R.R. | C.T. | T.L. | C.F. |
-|------------------|-----------|------|------|-------|------|------|------|------|------|------|------|------|
-| **TIME** | **38522** | 1480 | 3546 | 3376  | 3401 | 3549 | 3537 | 3538 | 3537 | 3513 | 5508 | 3537 |
-| TIME-Wiki        | 13848     | 1261 | 1299 | 1126  | 1151 | 1299 | 1287 | 1288 | 1287 | 1263 | 1300 | 1287 |
-| TIME-News        | 19958     | 0    | 1800 | 1800  | 1800 | 1800 | 1800 | 1800 | 1800 | 1800 | 3758 | 1800 |
-| TIME-Dial        | 4716      | 219  | 447  | 450   | 450  | 450  | 450  | 450  | 450  | 450  | 450  | 450  |
-| **TIME-Lite** | **943** | 60   | 90   | 78    | 86   | 90   | 90   | 90   | 90   | 90   | 89   | 90   |
-| TIME-Lite-Wiki   | 322       | 30   | 30   | 24    | 28   | 30   | 30   | 30   | 30   | 30   | 30   | 30   |
-| TIME-Lite-News   | 299       | 0    | 30   | 30    | 30   | 30   | 30   | 30   | 30   | 30   | 29   | 30   |
-| TIME-Lite-Dial   | 322       | 30   | 30   | 24    | 28   | 30   | 30   | 30   | 30   | 30   | 30   | 30   |
+```bash
+bash scripts/eval_time.sh
+```
 
-*Task abbreviations: Ext. (Extract), Loc. (Localization), Comp. (Computation), D.C. (Duration Compare), O.C. (Order Compare); E.R. (Explicit Reasoning), O.R. (Order Reasoning), R.R. (Relative Reasoning); C.T. (Co-temporality), T.L. (Timeline), C.F. (Counterfactual).*
+## Citation
 
-## 💪🏻 Evaluation Results
+If you find this work helpful, please consider [starring this repository](https://github.com/sylvain-wei/TIME), giving the [TIME dataset on Hugging Face](https://huggingface.co/datasets/SylvainWei/TIME) an upvote, and citing our paper.
 
-### 📊 TIME-Lite Results Radar Charts
-
-Here are the detailed evaluation results for the TIME-Lite dataset on different sub-datasets:
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 30px 0; gap: 20px;">
-
-<div style="flex: 1; min-width: 300px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-
-#### 🗄️ TIME-Lite-Wiki
-<img src="assets/radar_time_lite_wiki.png" alt="TIME-Lite-Wiki Results" style="max-width: 100%; height: auto; border-radius: 10px;"/>
-
-</div>
-
-<div style="flex: 1; min-width: 300px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-
-#### 📰 TIME-Lite-News
-<img src="assets/radar_time_lite_news.png" alt="TIME-Lite-News Results" style="max-width: 100%; height: auto; border-radius: 10px;"/>
-
-</div>
-
-<div style="flex: 1; min-width: 300px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-
-#### 💬 TIME-Lite-Dial
-<img src="assets/radar_time_lite_dial.png" alt="TIME-Lite-Dial Results" style="max-width: 100%; height: auto; border-radius: 10px;"/>
-
-</div>
-
-</div>
-
-
-
-## 💬 Citation
-
-<div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #953b3f; margin: 20px 0;">
-
-If you find our work interesting and meaningful, welcome to star this repo, give an upvote to our HF repo [TIME](https://huggingface.co/datasets/SylvainWei/TIME) and cite our paper as follows.
-
-</div>
-
-<div style="background-color: #2d3748; color: #e2e8f0; padding: 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.6; margin: 20px 0;">
+[![GitHub stars](https://img.shields.io/github/stars/sylvain-wei/TIME?style=flat-square&label=Stars&color=717780)](https://github.com/sylvain-wei/TIME)
 
 ```bibtex
 @article{wei2025time,
@@ -217,12 +189,3 @@ If you find our work interesting and meaningful, welcome to star this repo, give
   year={2025}
 }
 ```
-
-</div>
-
----
-
-<div align="center" style="margin: 30px 0; padding: 20px; background-color: #f8f9fa; border-radius: 10px;">
-
-
-
