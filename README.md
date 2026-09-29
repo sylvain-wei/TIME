@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/hero.png" alt="TIME — temporal reasoning in real-world scenarios" width="100%">
+  <img src="assets/hero.svg" alt="TIME — temporal reasoning in real-world scenarios" width="100%">
 </p>
 
-<h1 align="center">TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenarios</h1>
+<h2 align="center">[NeurIPS 2025 Spotlight] TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenarios</h2>
 
 <p align="center">
   Shaohang Wei, Wei Li, Feifan Song, Wen Luo,<br>
@@ -21,17 +21,16 @@
 </p>
 
 <p align="center">
-  <b>🌟 NeurIPS 2025 Spotlight</b><br>
   <sub>Accepted to the Datasets &amp; Benchmarks track.</sub>
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2505.12891"><img src="https://img.shields.io/badge/Paper-arXiv-40464D?style=flat-square" alt="Paper: arXiv"></a>
-  <a href="https://sylvain-wei.github.io/TIME/"><img src="https://img.shields.io/badge/Website-Project_Page-66717E?style=flat-square" alt="Project website"></a>
-  <a href="https://github.com/sylvain-wei/TIME"><img src="https://img.shields.io/badge/Code-GitHub-24292F?style=flat-square&logo=github&logoColor=white" alt="Code: GitHub"></a>
-  <a href="https://huggingface.co/datasets/SylvainWei/TIME"><img src="https://img.shields.io/badge/Dataset-TIME-87919A?style=flat-square" alt="TIME dataset on Hugging Face"></a>
-  <a href="https://huggingface.co/datasets/SylvainWei/TIME-Lite"><img src="https://img.shields.io/badge/Dataset-TIME--Lite-59636E?style=flat-square" alt="TIME-Lite dataset on Hugging Face"></a>
-  <a href="https://neurips.cc/virtual/2025/poster/121417"><img src="https://img.shields.io/badge/NeurIPS_2025-Spotlight-30343B?style=flat-square" alt="NeurIPS 2025 Spotlight"></a>
+  <a href="https://arxiv.org/abs/2505.12891"><img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square" alt="Paper: arXiv"></a>
+  <a href="https://sylvain-wei.github.io/TIME/"><img src="https://img.shields.io/badge/Website-Project_Page-275EE8?style=flat-square" alt="Project website"></a>
+  <a href="https://github.com/sylvain-wei/TIME"><img src="https://img.shields.io/badge/Code-GitHub-2EA44F?style=flat-square&logo=github&logoColor=white" alt="Code: GitHub"></a>
+  <a href="https://huggingface.co/datasets/SylvainWei/TIME"><img src="https://img.shields.io/badge/Dataset-TIME-E5A50A?style=flat-square" alt="TIME dataset on Hugging Face"></a>
+  <a href="https://huggingface.co/datasets/SylvainWei/TIME-Lite"><img src="https://img.shields.io/badge/Dataset-TIME--Lite-0891B2?style=flat-square" alt="TIME-Lite dataset on Hugging Face"></a>
+  <a href="https://neurips.cc/virtual/2025/poster/121417"><img src="https://img.shields.io/badge/NeurIPS_2025-Spotlight-7B2CBF?style=flat-square" alt="NeurIPS 2025 Spotlight"></a>
 </p>
 
 <p align="center">
@@ -179,7 +178,7 @@ bash scripts/eval_time.sh
 
 If you find this work helpful, please consider [starring this repository](https://github.com/sylvain-wei/TIME), giving the [TIME dataset on Hugging Face](https://huggingface.co/datasets/SylvainWei/TIME) an upvote, and citing our paper.
 
-[![GitHub stars](https://img.shields.io/github/stars/sylvain-wei/TIME?style=flat-square&label=Stars&color=717780)](https://github.com/sylvain-wei/TIME)
+[![GitHub stars](https://img.shields.io/github/stars/sylvain-wei/TIME?style=flat-square&label=Stars&color=E5A50A)](https://github.com/sylvain-wei/TIME)
 
 ```bibtex
 @article{wei2025time,
