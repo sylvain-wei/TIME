@@ -2,7 +2,7 @@
   <img src="assets/hero.svg" alt="TIME — temporal reasoning in real-world scenarios" width="100%">
 </p>
 
-<h2 align="center">[NeurIPS 2025 Spotlight✨] TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenarios</h2>
+<h2 align="center">NeurIPS 2025 Spotlight✨ TIME: A Multi-level Benchmark for Temporal Reasoning of LLMs in Real-World Scenarios</h2>
 
 <p align="center">
   Shaohang Wei, Wei Li, Feifan Song, Wen Luo,<br>
